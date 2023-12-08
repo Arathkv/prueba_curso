@@ -12,5 +12,9 @@ app.get( '/adios', (req, res) =>{
     res.send('ruta Adios');
 });
 
+app.post( '/registro', (req, res) =>{
+    res.send('recibiendo informacion de registro');
+});
+
 app.listen(port, () => {
   console.log('Servidor escuchando en http://localhost:${port}');},);
