@@ -15,6 +15,9 @@ app.get( '/adios', (req, res) =>{
 app.post( '/registro', (req, res) =>{
     res.send('recibiendo informacion de registro');
 });
+app.post('/login', (req, res) => {
+    res.send('ruta de Login nueva');
+});
 
 app.listen(port, () => {
-  console.log('Servidor escuchando en http://localhost:${port}');},);
+  console.log('Servidor escuchando en http://localhost:${port}');});
